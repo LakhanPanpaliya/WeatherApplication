@@ -2,7 +2,7 @@ const input = document.getElementById("input-city");
 // console.log(city_name.innerHTML);
 input.addEventListener('keydown',searchTemp);
 const apikey = "8ee69e1eb3534a4b93b122434260505";
-const base_url = 'http://api.weatherapi.com/v1/forecast.json'
+const base_url = 'https://api.weatherapi.com/v1/forecast.json'
 
 // default city 
 display("Pune");
