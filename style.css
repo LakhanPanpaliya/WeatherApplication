@@ -92,7 +92,7 @@
 }
 .right-part{
     grid-area: right-part;
-    background: url("/Assesst/sun.png");
+    background: url("./Assesst/sun.png");
     height: 513px; 
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
