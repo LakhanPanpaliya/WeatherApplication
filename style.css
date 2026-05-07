@@ -1,0 +1,383 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.parent-div{
+    background: rgb(230, 239, 242);
+    padding-bottom: 100px;
+}
+.nav-bar{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    background: rgb(235, 241, 243); 
+    padding: 15px 0px 15px 30px;
+}
+.menu-bar{
+    display: flex;
+    gap: 25px;
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight:550;
+}
+.blues{
+    color: #0284c7;
+}
+.heading-sym{
+    font-size: 25px;
+}
+.heading{
+    font-size: 25px;
+}
+.search-bar{ 
+    font-size: 20px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 8px;
+    margin-left: 110px;
+}
+#input-city{
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+}
+.serach-icon{
+    padding: 4px 10px 0px 10px;
+}
+.menu-item :hover{
+    color: #0284c7;
+}
+
+
+
+/* main-body */
+
+.main-body{
+    width: 70%;
+    /* border: 2px solid black; */
+    margin: auto;
+}
+.section1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "leftside rightside";
+    gap: 25px;
+    margin-top: 80px;
+}
+.leftside{
+    grid-area: leftside; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left-part right-part";
+}
+.rightside{
+    grid-area: rightside;
+}
+.left-part{
+    grid-area: left-part;
+    /* border-radius: 20px; */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-top: 40px;
+    gap: 20px;
+    background-color: white;
+}
+.right-part{
+    grid-area: right-part;
+    background: url("/Assesst/sun.png");
+    height: 513px; 
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    border: none;
+}
+.location-cityname{
+    display: flex;
+    gap: 20px;
+    font-size: 50px;
+    background: white;
+    
+}
+.city-names{
+    color: #0284c7;
+    font-weight: bolder;
+}
+
+.degree-div{
+    margin-top: 120px;
+}
+#degree-heading{
+    font-size: 110px;
+}
+.degree-div p{
+    color: #0284c7;
+}
+.precip-div{
+    width: 150px;
+    margin-top: 350px;
+    margin-bottom: 10px;
+    margin-left: 80px; 
+    background:  #ffffff4d;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 20px; 
+    border-radius: 20px;
+}
+.wind-div{
+    margin-top: 350px;
+    width: 150px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    background:  #ffffff4d;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 20px; 
+    border-radius: 20px;
+}
+.card{ 
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-right: 60px;
+    
+}
+.card1{
+    margin-bottom: 30px;
+}
+.card-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.desc{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    /* border: 1px solid black; */
+}
+.temp{
+    background: #ffffff4d;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+.temp-right{
+    font-size: 30px;
+}
+.card-name{
+    font-size: 25px;
+}
+.card-heading i{
+    font-size: 25px;
+    padding-top: 15px;
+}
+.max{
+    padding-left: 100px;
+}
+.humidity-desc{
+    padding-top: 30px;
+}
+
+
+
+/* section2 */
+.section2{
+    display: flex;
+    justify-content: space-between; 
+    padding-right: 55px;
+    margin-top: 70px; 
+}
+ 
+.cards{
+    /* height: 100px; */
+    border-radius: 20px;
+    background: white;
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    /* padding-bottom:15px ; */
+    font-size: 20px;
+}
+
+
+
+/* section3 */
+
+.section3{
+    display: flex;
+    margin-top: 60px; 
+    border-radius: 20px;
+    flex-direction: column;
+    background: white;
+     
+}
+.section3-heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px 0px 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.hourly-time{
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    font-size: 20px;
+}
+.hours{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    /* background:  rgb(218, 222, 224); */
+    background: rgb(230, 239, 242);
+}
+.view-all{
+    color: #0284c7;
+}
+
+
+input[type="text"]:focus {
+    outline: none;
+    border: none; /* Or keep your custom border style here */
+}
+#humiditys{
+    font-size: 20px;
+    padding-top: 5px;
+}
+ 
+ 
+
+@media (max-width:766px) {
+    .nav-bar{
+        /* width: 100px; */
+        display: flex;
+        text-align:left;
+        gap: 0px;
+        padding: 10px 0px 0px 0px;
+    }
+    .menu-bar{
+        display: none;
+    }
+    .search-bar{ 
+        margin-left: 0px;
+        padding: 5px;
+    }  
+    .section1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "leftside" "rightside";
+    }
+    .right-part{
+        display: none;
+    }
+    .left-part{
+        height: 350px;
+        width: 270px;
+        border-radius: 20px;
+    }
+    .city-names{
+        font-size: 35px;
+    }
+    #degree-heading{
+        font-size: 45px; 
+    }
+    .degree-div{
+        margin-top: 70px;
+    }
+    .card{
+        max-width: 270px;
+    }
+    .section2{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-right: 10px;
+        margin-top: 40px;
+        gap: 20px; 
+    }
+    .cards{
+        width: 270px;
+        padding: 20px 50px;
+    }
+    .section3{
+        max-width: 260px;
+    }
+}
+
+@media (max-width:768px){
+    .nav-bar{ 
+        display: flex;
+        text-align:left;
+        gap: 0px;
+        padding: 10px 0px 0px 0px;
+    }
+    .search-bar{ 
+        margin-left: 0px;
+        padding: 2px;
+    }
+    .section1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "leftside" "rightside";
+    }
+    .left-part,.right-part{
+        height: 350px;
+        width: 270px;
+        /* border-radius: 20px; */
+    }
+    .precip-div, .wind-div{
+        display: none;
+    }
+    .city-names{
+        font-size: 35px;
+    }
+    #degree-heading{
+        font-size: 45px; 
+    }
+    .degree-div{
+        margin-top: 70px;
+    } 
+    .card{
+        width: 535px;
+         margin-right: 0px;
+    }
+    .section2{
+        display: flex;
+        flex-wrap: wrap; 
+        padding-right: 0px;
+        margin-top: 40px;
+        gap: 10px; 
+    }
+    .cards{
+        width: 260px;
+        margin-bottom: 10px;
+        padding: 30px;
+    } 
+    
+    .section3{
+        width: 540px;
+    }
+}
